@@ -1,0 +1,9 @@
+name: print context data
+on: [push,workflow_dispatch]
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+    - name: print
+      run: echo "{{ $github }}"
+    
